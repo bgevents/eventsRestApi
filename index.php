@@ -1,4 +1,7 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
 
-echo "Hello world";
-print_r("Here we go mario"); 
+$app = new Silex\Application();
+
+$app['debug'] = true;
+
